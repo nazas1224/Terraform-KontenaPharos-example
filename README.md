@@ -29,7 +29,6 @@ Update variables in main.tf file
 $ terraform apply
 ```
 after its complete update cluster.yml file:
-add nodes private IP address to the trusted subnets list.
 add additional addons or other configurations depending on your needs.
 
 # Bootstrap your First Pharos Kubernetes Cluster using Terraform
