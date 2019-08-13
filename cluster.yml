@@ -9,15 +9,11 @@ network:
       - 10.168.0.0/16 #private IP's subnet
       - 172.16.0.0/16 #private IP's subnet
 addons:
-    kontena-universal-lb:
-      enabled: true
     ingress-nginx:
       enabled: true
     cert-manager:
       enabled: true    
     helm:
-      enabled: true  
-    kontena-stats:
       enabled: true  
     kontena-lens: 
       enabled: true
