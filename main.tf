@@ -49,11 +49,14 @@ resource "cherryservers_project" "Kontena_Pharos" {
   team_id = "${var.team_id}"
   name    = "Kontena_Pharos"
 }
-resource "cherryservers_ip" "floating-ip-kontena-worker" {
-    project_id = "${cherryservers_project.Kontena_Pharos.id}"
-    region = "${var.region}"
-    count = "${var.worker_count}"
-}
+#This will order 1 floating IP to each of the worker nodes
+#If You need floating IP's for your application 
+#
+#resource "cherryservers_ip" "floating-ip-kontena-worker" {
+#    project_id = "${cherryservers_project.Kontena_Pharos.id}"
+#    region = "${var.region}"
+#    count = "${var.worker_count}"
+#} 
 
 resource "cherryservers_server" "pharos_master" {
   count           = "${var.master_count}"
@@ -73,7 +76,7 @@ resource "cherryservers_server" "pharos_worker" {
   image        = "${var.host_os}"
   project_id   = "${cherryservers_project.Kontena_Pharos.id}"
   ssh_keys_ids = ["${cherryservers_ssh.kontena_ssh.id}"]
-  ip_addresses_ids = ["${cherryservers_ip.floating-ip-kontena-worker.*.id[count.index]}"]
+#  ip_addresses_ids = ["${cherryservers_ip.floating-ip-kontena-worker.*.id[count.index]}"] <<-- This line will add 1 flaoting IP per worker node
 }
 
 output "pharos_hosts" {
