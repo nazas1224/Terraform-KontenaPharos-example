@@ -22,7 +22,7 @@ $ chpharos install latest --use
 ```
 # Prepare Nodes for Kubernetes Cluster:
 
-Note: For now works with CentOS 7 64bit image.(Contacted Knotena Pharos technical deparment regarding issues with Ubuntu 16.04 64bit image)
+Note: For now works with CentOS 7 64bit image.
 
 Update variables in main.tf file
 
