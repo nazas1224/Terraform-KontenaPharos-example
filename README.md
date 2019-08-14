@@ -3,8 +3,8 @@ Terraform Example for Kontena Pharos on Cherryservers
 
 # Prerequisities:
 * Kontena Pharos toolchain installed locally
-* Terraform v11.x installed locally (for now works only with legacy versions of Terraform). Copy it to the working Terraform directory.
-* Terraform Provider Cherryservers (http://downloads.cherryservers.com/other/terraform/). Copy it to the working Terraform directory.
+* Terraform v11.x installed locally (for now works only with legacy versions of Terraform)
+* Terraform Provider Cherryservers (http://downloads.cherryservers.com/other/terraform/)
 * Cherryservers.com credentials (api key, Team ID)
 
 # Setup Kontena Pharos CLI Toolchain:
