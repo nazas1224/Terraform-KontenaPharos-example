@@ -39,6 +39,7 @@ variable "worker_count" {
 
 variable "host_os" {
   default = "CentOS 7 64bit"
+  # You can choose from Ubtuntu 18_04 64bit, Debian 9 64bit, CentOS 7 64bit
 }
 
 provider "cherryservers" {
