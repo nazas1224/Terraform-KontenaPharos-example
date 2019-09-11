@@ -22,7 +22,7 @@ $ chpharos install latest --use
 ```
 # Prepare Nodes for Kubernetes Cluster:
 
-Note: For now works with CentOS 7 64bit image.
+Note: Works with CentOS 7 64bit, Ubuntu 18_04 64bit and Debain 9 64bit images.
 
 Update variables in main.tf file
 
