@@ -1,6 +1,6 @@
 variable "auth_token" {
   description="Your Cherryservers API token"
-#  default ="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXUyJ9.eyJjbGllbnRfaWQiOjM1ODk0LCJpYXQiOjE1NjM5NTIyMDl9.da4ZwnuWqMUnEe7cry_ID64sjTmMv20BL6UH1cHrMtA"
+#  default =""
 }
 
 variable "team_id" {
