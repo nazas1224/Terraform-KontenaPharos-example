@@ -1,4 +1,4 @@
-# Terraform-KontenaPharos-example
+# Terraform-KontenaPharos-legacy-example
 Terraform Example for Kontena Pharos on Cherryservers
 
 # Prerequisities:
